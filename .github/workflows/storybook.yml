@@ -20,6 +20,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          branch: gh-pages
+          branch: main
           folder: storybook-static # npm run build-storybook输出的文件夹
 
