@@ -40,15 +40,9 @@ jobs:
         with:
           path: /storybook-static
 
-  # 部署工作
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      # 部署工作
+      - name: Deploy
+          uses: JamesIves/github-pages-deploy-action@3.6.2
+          with:
+            branch: main
+            folder: storybook-static # npm run build-storybook输出的文件夹
