@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // 默认
+    "target": "ES5", // 修改
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    // 新增
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "declaration": true, // 生成 .d.ts 文件
+    "declarationDir": "types", // 生成 .d.ts 文件目录
+    "sourceMap": true,
+    "outDir": "dist", // 编译输出目录
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入。这并不影响代码的显示，仅为了类型检查。
+    "emitDeclarationOnly": true, // 只生成 .d.ts 文件
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/stories"
+  ],
+}

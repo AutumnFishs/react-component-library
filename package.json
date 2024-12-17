@@ -1,0 +1,56 @@
+{
+  "name": "@autumnfishs/react-component-library",
+  "version": "0.0.1",
+  "description": "react component library",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autumnfishs/react-component-library.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-storybook": "storybook build",
+    "build": "rollup -c",
+    "dev": "storybook dev -p 6006",
+    "build-vite": "vite build"
+  },
+  "keywords": [],
+  "author": "@autumnfishs",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@chromatic-com/storybook": "^3.2.2",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^9.0.2",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "@types/axios": "^0.14.4",
+    "@types/react": "^18.0.24",
+    "babel-loader": "^8.2.5",
+    "gulp": "^5.0.0",
+    "postcss": "^8.4.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.2.3",
+    "rollup-plugin-delete": "^2.1.0",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.83.0",
+    "storybook": "^8.4.7",
+    "typescript": "^4.8.4",
+    "vite": "^6.0.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
